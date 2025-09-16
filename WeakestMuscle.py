@@ -1,4 +1,3 @@
-import sys
 #Info for running program
 weightRatioM = {"Flat Bench Press":1.00, "Barbell Squat":1.5, "Barbell Standing Shoulder Press":0.65, "Bent Over Barbell Row":1.0,
                  "Romanian Deadlift (RDL)":1.25, "Standing Barbell Bicep Curl":0.35, "Straight Bar Tricep Pushdown":0.3, "Machine Calf Raise":0.9}
@@ -207,13 +206,13 @@ def bmiTest():
     print(f"\nYou have a BMI of {bmi}!")
 
     if bmi <= 18.5:
-        print(f"You are in the Underweight category (BMI of 0-18.5). It may be worth it to try and put on a few {units}s!")
+        print(f"You are in the Underweight category (BMI of 0-18.5).")
     elif bmi > 18.5 and bmi <= 25:
         print("You are in the Healthy Weight category (BMI of 18.5-25). This is a very healthy range! Way to go!")
     elif bmi > 25 and bmi <= 30:
-        print("You are in the Overweight category (BMI of 25-30). You are a bit overweight, and it may be worth it to watch your diet a bit!")
+        print("You are in the Overweight category (BMI of 25-30).")
     else:
-        print("You are in the Obese category (BMI of 30+). It may be worth it to watch your diet a bit!")
+        print("You are in the Obese category (BMI of 30+).")
     print("\nNOTE: a BMI test is a very flawed way of deciding what kind of condition your health is in. If you have a genuine health problem, consult a doctor!")
 
     tempInput = ""
@@ -230,12 +229,12 @@ def infoCredits():
     print("""This software is a quick and easy way to discover where your muscle weaknesses may lie.
 Simply run the software, and follow the instructions to find this out!
           
-The recieved on each exercise at the end of the program is given by the equation below:
+The recieved score on each exercise at the end of the program is given by the equation below:
 (MaximumWeightMoved / BodyWeight) / (AdvancedBodyWeightRatio)
           
 This "ratio" is essentially the amount of weight an advanced lifter is on average able to move compared to their body mass.
           
-(To put it bluntly, if you have a score of over 1, you are considered an "advanced lifter" in that movement).
+(To put it simply, if you have a score of over 1, you are considered an "advanced lifter" in that movement).
           
           
 CREDITS:
@@ -245,6 +244,8 @@ CREDITS:
         NSCA.com
           
     Created by Mitchell Damuth
+          
+THIS PROGRAM SHOULD NOT BE USED AS A LEGITIMATE MEDICAL CONSULTANT! CONSULT A DOCTOR IF YOU HAVE ANY GENUINE QUESTIONS OR FEARS ABOUT YOUR HEALTH!
             """)
     input("Press Enter to continue")
 
